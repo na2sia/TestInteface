@@ -1,0 +1,1 @@
+﻿D:\Natasha\!!Trening ASP.NET\Projects\TestInterface\TestInterface\ClassEnergy.cs
