@@ -7,9 +7,11 @@ namespace ITest
 {
     class ComparerByPrice : IComparer<IWhiteGoods>
     {
-        public int Compare(IWhiteGoods x, IWhiteGoods y)
+        public int Value { get; set; }
+        public int Compare(IWhiteGoods x,IWhiteGoods y)
         {
-            if (x != null && y != null)
+            return x == null ? 1 : x.Price.CompareTo(y.Price);
+            /*if (x != null && y != null)
             {
                 if (x.Price > y.Price)
                     return 1;
@@ -18,6 +20,7 @@ namespace ITest
                 else return 0;
             }
             else return -1;
-    }
+    }*/
+        }
     }
 }

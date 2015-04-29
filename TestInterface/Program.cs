@@ -13,8 +13,8 @@ namespace ITest
             goods.Add(new VacuumCleaner()
             {
                 NameProduction = "LG",
-                ClassEnergy = ClassEnergy.C,
-                Price = 9000000,
+                ClassEnergy = ClassEnergy.B,
+                Price = 900000,
                 DateProduction = new DateTime(2000, 1, 3),
                 Power = 2000,
                 TypeCleaner = TypeCleaner.dry,

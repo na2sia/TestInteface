@@ -9,7 +9,8 @@ namespace ITest
     {
         public int Compare(IWhiteGoods x, IWhiteGoods y)
         {
-            if (x != null && y != null)
+            return x == null ? 1 : x.DateProduction.CompareTo(y.DateProduction);
+           /* if (x != null && y != null)
             {
                 if (x.DateProduction > y.DateProduction)
                     return 1;
@@ -17,7 +18,7 @@ namespace ITest
                     return -1;
                 else return 0;
             }
-            else return -1;
+            else return -1;*/
         }
     }
 }
