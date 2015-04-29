@@ -45,6 +45,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ComparerByClassEnergy.cs" />
+    <Compile Include="ComparerByPrice.cs" />
     <Compile Include="ComparerByYearP.cs" />
     <Compile Include="WhiteGoodsCatalog.cs" />
     <Compile Include="HDFormat.cs" />

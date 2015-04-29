@@ -1,0 +1,5 @@
+D:\Natasha\!!Trening ASP.NET\Projects\TestInterface\TestInterface\bin\Debug\TestInterface.exe
+D:\Natasha\!!Trening ASP.NET\Projects\TestInterface\TestInterface\bin\Debug\TestInterface.pdb
+D:\Natasha\!!Trening ASP.NET\Projects\TestInterface\TestInterface\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Natasha\!!Trening ASP.NET\Projects\TestInterface\TestInterface\obj\x86\Debug\TestInterface.exe
+D:\Natasha\!!Trening ASP.NET\Projects\TestInterface\TestInterface\obj\x86\Debug\TestInterface.pdb

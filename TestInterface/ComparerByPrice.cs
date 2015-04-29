@@ -5,19 +5,19 @@ using System.Text;
 
 namespace ITest
 {
-    public class ComparerByYearP : IComparer<IWhiteGoods>
+    class ComparerByPrice : IComparer<IWhiteGoods>
     {
         public int Compare(IWhiteGoods x, IWhiteGoods y)
         {
             if (x != null && y != null)
             {
-                if (x.DateProduction > y.DateProduction)
+                if (x.Price > y.Price)
                     return 1;
-                if (x.DateProduction < y.DateProduction)
+                if (x.Price < y.Price)
                     return -1;
                 else return 0;
             }
             else return -1;
-        }
+    }
     }
 }

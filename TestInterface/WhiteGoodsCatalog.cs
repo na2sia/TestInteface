@@ -60,6 +60,15 @@ namespace ITest
             newList.Sort(comparer);
             whiteGoods = newList;
         }
+        public void SortByPrice()
+        {
+            this.Sort(new ComparerByPrice());
+        }
+
+        public void SortByClassEnergy()
+        {
+            this.Sort(new ComparerByClassEnergy());
+        }
 
         public void SortByCreationDate()
         {
@@ -71,6 +80,16 @@ namespace ITest
             foreach (var i in whiteGoods)
             {
                 if (i.DateProduction >= startYaer && i.DateProduction <= endYear)
+                {
+                    yield return i;
+                }
+            }
+        }
+        public IEnumerable<IWhiteGoods> GetWhiteGoods(double startPrice, double endPrice)
+        {
+            foreach (var i in whiteGoods)
+            {
+                if (i.Price >= startPrice && i.Price <= endPrice)
                 {
                     yield return i;
                 }
