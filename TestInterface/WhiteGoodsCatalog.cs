@@ -7,6 +7,7 @@ namespace ITest
 {
    public class WhiteGoodsCatalog: ICollection<IWhiteGoods>
    {
+       
        private ICollection<IWhiteGoods> whiteGoods = new List<IWhiteGoods>();
        #region ICollection<IWhiteGoods>
        public void Add(IWhiteGoods item)

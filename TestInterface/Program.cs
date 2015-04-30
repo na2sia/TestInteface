@@ -39,13 +39,36 @@ namespace ITest
                 Price = 7000000,
                 DateProduction = new DateTime(2010, 10, 3),
                 ScreenSize = 82,
-                ScreenType = ScreenType.LCD
+                ScreenType = ScreenType.LCD,
+                HDFormat = HDFormat.i1080
+            }
+                );
+            goods.Add(new TV()
+            {
+                NameProduction = "Panasonic",
+                ClassEnergy = ClassEnergy.A,
+                Price = 14000000,
+                DateProduction = new DateTime(2009, 1, 1),
+                ScreenSize = 82,
+                ScreenType = ScreenType.OLED,
+                HDFormat = HDFormat.K4
+            }
+                );
+            goods.Add(new TV()
+            {
+                NameProduction = "Philips",
+                ClassEnergy = ClassEnergy.B,
+                Price = 20000000,
+                DateProduction = new DateTime(2014, 1, 1),
+                ScreenSize = 110,
+                ScreenType = ScreenType.OLED,
+                HDFormat = HDFormat.K4
             }
                 );
             goods.Add(new Washer()
             {
                 NameProduction = "Bosh",
-                ClassEnergy = ClassEnergy.A,
+                ClassEnergy = ClassEnergy.C,
                 Price = 1000000,
                 DateProduction = new DateTime(2012, 9, 3),
                 MaxLoad = 5,
@@ -92,7 +115,23 @@ namespace ITest
             {
                 Console.WriteLine("{0}, {1}, {2}", i.ToString(), i.NameProduction, i.Price);
             }
-            Console.ReadKey();
+
+            Console.WriteLine();
+            TV tv = new TV();
+            Console.WriteLine("Телевизоры с форматом {0}", HDFormat.K4);
+            foreach (var i in goods)
+            {
+                if (i is TV)
+                {
+                    tv = i as TV;
+                    if (tv.HDFormat == HDFormat.K4)
+                    {
+                        Console.WriteLine("{0}, {1}, {2}", tv.ToString(), tv.NameProduction, tv.HDFormat);
+                    }    
+                }
+
+            }
+Console.ReadKey();
         }
     }
 }
